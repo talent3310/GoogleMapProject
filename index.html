@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="img/manifest.json">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+  <title>REAL VALUE</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+
+<body>
+<button id="value-info" class="hidden toggle-menu menu-right ">PUSH RIGHT</button> <!--- hidden button used for toggling slide menu -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color:#FFFFFF">REAL VALUE</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="research.html">RESEARCH</a></li>
+        <li><a href="process.html">PROCESS</a></li>
+        <li><a href="beta.html">BETA</a></li>
+      </ul>
+
+      <!-- Menu -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a data-toggle="modal" data-target="#menu"><span class="glyphicon glyphicon-th-list", onclick="openNav()"></a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<!--/.nav-collapse -->
+<ul class="nav navbar-nav navbar-right">
+
+  <div id="mySidenav" class="sidenav">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+    <div id="marketTrend" style="padding:20px;"></div>
+    <a href="#">Market Trend</a>
+    <a href="#">Real Estate</a>
+    <a href="#">Investment</a>
+    <a href="#">Visual Insights</a>
+  </div>
+
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "350px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+
+</ul>
+
+<!-- /.legend -->
+
+<row>
+  <div class="col-md-12">
+    <div id="mapVis">
+    </div>
+  </div>
+  <div id='legend' style='display:none;'>
+    <strong>Real Estate Value</strong>
+    <p>Data based on 2015 Tax Assessment</p>
+    <nav class='legend clearfix'>
+      <span style='background:red'></span>
+      <span style='background:deeppink;'></span>
+      <span style='background:hotpink;'></span>
+      <span style='background:lightpink;'></span>
+      <span style='background:white;'></span>
+      <label>High</label>
+      <label></label>
+      <label>Medium</label>
+      <label></label>
+      <label>Low</label>
+  </div>
+</row>
+
+<div id = "map"></div>
+
+
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.js'></script>
+
+<script src="libs/jquery-2.1.3.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="libs/bootstrap.min.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js'></script>
+<script src="libs/d3.min.js"></script>
+<script src="libs/token.js"></script>
+<script src="js/mapvis.js"></script>
+
+<script src="js/jquery.pulse.min.js"></script>
+
+
+
+
+
+
+</body>
+</html>

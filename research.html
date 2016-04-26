@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://d3js.org/d3.v2.js"></script>
+
+
+    <title>REAL VALUE</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css" />
+    <style>
+        .content {
+            position:relative;
+            top:15px;
+            left:10%;
+            width:910px;
+            padding-bottom: 30px;
+        }
+
+        .headline {
+            font-family: 'Open Sans', sans-serif;
+            color: #FFFFFF;
+            margin-bottom: 7px;
+        }
+
+        .chatter {
+            font-family: 'Open Sans', sans-serif;
+            color: #FFFFF0;
+            margin-bottom: 15px;
+        }
+
+        .para {
+            font-family: 'Open Sans', sans-serif;
+            color: #FFFFF0;
+            margin-bottom: 15px;
+        }
+
+
+
+
+        div.middleRule {
+            min-height: 1px;
+            clear:both;
+            width: 910px;
+            border-bottom: 1px solid #46505A;
+            height:1px; padding-top:10px;
+            margin-bottom:30px;
+        }
+
+        div.lowerRule {
+            min-height: 1px;
+            clear:both;
+            width: 910px;
+            border-bottom: 1px solid #46505A;
+            height:5px;
+            padding-top:110px;
+            margin-bottom:100px;
+        }
+
+        form {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        //* streamgraph */
+
+        }
+
+        text {
+            pointer-events: none;
+        }
+
+        .grandparent text { /* header text */
+            font-weight: bold;
+            font-size: medium;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        rect {
+            fill: none;
+            stroke: #fff;
+        }
+
+        rect.parent,
+        .grandparent rect {
+            stroke-width: 2px;
+        }
+
+        .grandparent rect {
+            fill: #fff;
+        }
+
+        .children rect.parent,
+        .grandparent rect {
+            cursor: pointer;
+        }
+
+        rect.parent {
+            pointer-events: all;
+        }
+
+        .children:hover rect.child,
+        .grandparent:hover rect {
+            fill: #aaa;
+        }
+
+
+        .axis path, .axis line {
+            fill: none;
+            stroke: #fff;
+            stroke-width: 1px;
+            shape-rendering: crispEdges;
+        }
+
+        button {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+<script src="http://www.d3js.org/d3.v2.js"></script>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" style="color:#FFFFFF">REAL VALUE</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="research.html">RESEARCH</a></li>
+                <li><a href="process.html">PROCESS</a></li>
+                <li><a href="beta.html">BETA</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div id="container" class="module">
+
+    <div class="bLogo">
+    </div>
+    <div class="topRule"></div>
+    <div class="content">
+        <h1 class="headline" align="center">Research</h1>
+        <br>
+        <p class = "chatter">
+
+        </p>
+        <div class="timeStamp">
+        </div>
+        <br>
+        <div class="relatedContent"></div>
+        <div id="shareFo">
+        </div>
+
+        <div class="middleRule"></div>
+
+        <p id="chart" align = "center">
+
+        <div class = "para" align = "justify">
+            The real estate market at the City of Boston demonstrates a diverse body of
+            ownerships. Click each city to see what companies they have in Boston. Click
+            the top white bar to go back.
+
+        </div>
+
+        <div class="lowerRule"></div>
+
+        <div class="stream" align = "center"></div>
+
+
+
+    </div>
+
+        <!--
+                <p id="ptype" align = "center">
+                <p id="floors" align = "center">
+
+                    <p id="stream" align = "center">
+                </div>
+        -->
+
+        <script src="js/treemap.js"></script>
+        <script src="js/streamgraph.js"></script>
+
+        <!--
+                <script src="js/PropertyChart.js"></script>
+                    <script src="js/FloorsChart.js"></script>
+                    <script src="js/research.js"></script>
+                --!>
+
+
+
+                <!-- Load JS libraries: jQuery, bootstrap, D3, D3 tooltip -->
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="libs/d3.min.js"></script>
+
+
+
+
+
+
+</body>
+</html>

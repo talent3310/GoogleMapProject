@@ -1,0 +1,258 @@
+#map {
+    width: 1500px;
+    height: 800px;
+    background-color: #CCC;
+
+}
+
+body {
+    background: black;
+    padding-top: 60px;
+    font-family: 'Open Sans', sans-serif;
+    color: #F8F8F8;
+}
+#filterform {
+    width:300px;
+}
+#timeVis {
+    height: 220px;
+}
+.pievis {
+    height: 280px;
+}
+.time {
+    height: 100px;
+    width: 100%;
+}
+.year.axis path, line
+{
+    display: none;
+}
+.year.axis text
+{
+    font: 13px;
+}
+.highlight {
+    color:dimgray;
+}
+.notHovered {
+    opacity: 0.3;
+}
+#formVis {
+    width: 50%;
+    height:50px;
+    position: fixed;
+    top: 60px;
+    text-align: center;
+}
+.btn-toolbar {
+    text-align: center;
+    display: inline-block;
+    float: middle;
+}
+
+
+.btn {
+    min-width: 120px;
+    color: black;
+    font-weight: 300;
+}
+
+.btn.active {
+    background-color: black;
+    color: white;
+    font-weight: 800;
+}
+
+#stackedVis, #weatherVis, #ageVis {
+    height: 350px;
+}
+#whenVis {
+    height:700px;
+}
+#yearBrush {
+    position: fixed;
+    bottom: 0;
+}
+.userline {
+    opacity: 0.5
+}
+.userline:hover {
+    opacity: 1
+}
+.weekendLine {
+    opacity: 0.5
+}
+.weekendLine:hover {
+    opacity: 1
+}
+.weekdayLine {
+    opacity: 0.5
+}
+.weekdayLine:hover {
+    opacity: 1
+}
+.arc path {
+    stroke: #fff;
+}
+.brush{
+    fill: black;
+    fill-opacity: .5;
+    pointer-events: none;
+}
+.timeaxis text {
+    font-size: 28px;
+    font-weight: bold;
+}
+.axis line,
+.axis path {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1px;
+}
+.line {
+    fill: none;
+    stroke-width:2px;
+}
+#explore-button
+{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    z-index: 1000;
+    padding: 1px 1px 1px 1px;
+}
+.circle {
+    opacity: 0.65;
+    fill: lightgrey;
+}
+#chordVis {
+    height:600px;
+    width:700px;
+}
+
+
+.leaflet-popup-content-wrapper {
+    background:rgba(0,0,0,0.8);
+    color:#fff;
+    font-size:12px;
+    line-height:12px;
+}
+.leaflet-popup-content-wrapper a {
+    color:rgba(255,255,255,0.5);
+}
+.leaflet-popup-tip-container {
+    width:0px;
+    height:0px;
+}
+
+
+.d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+
+}
+
+.legend {
+    display:block;
+    float:left;
+    height:15px;
+    width:20%;
+    text-align:center;
+    font-size:9px;
+    color:black;
+}
+
+/* styles for the panel on right of overview */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+.landing_box_left1 {
+    position: absolute;
+    left: 0px;
+}
+
+.landing_box_right1 {
+    position: absolute;
+    right: 150px;
+}
+
+.landing_box_left2 {
+    position: absolute;
+    left: 0px;
+    top: 160px;
+}
+
+.landing_box_right2 {
+    position: absolute;
+    right: 120px;
+    top: 160px;
+
+}
+
+.landing_box_left3 {
+    position: absolute;
+    left: 0px;
+    top: 320px;
+
+}
+
+.landing_box_right3 {
+    position: absolute;
+    right: 160px;
+    top: 320px;
+
+
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/*! footer.css */
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
